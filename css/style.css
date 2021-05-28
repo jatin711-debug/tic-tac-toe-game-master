@@ -1,0 +1,248 @@
+/* NEW COLOR SCHEME = DARK GREY BACKGROUND WITH VIBRANT AQUA GREEN FOR THE BOARD AND X/O */
+
+body{
+    background-color: #212121;
+    color: #EEEEEE;
+    font-family: 'Bangers', cursive;
+}
+
+
+
+.startModal{
+    position: absolute;
+    top:0;
+    height:100vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#212121;
+}
+.startModal---Hide{
+    display: none;
+}
+
+#title{
+    color:#EEEEEE;
+    /* border:solid; */
+    margin-top: 5%;
+    margin-bottom:0;
+    font-size: 20vh;
+    color:#616161
+}
+
+#logo{
+    margin-bottom: 1%;
+}
+#startButton{
+     width: 20%;
+    height: 5%;
+    border-radius: 25px;
+    border: 0px;
+    font-size: xx-large; 
+    background-color:#EEEEEE;
+    font-family: 'Bangers', cursive;
+    color:black;
+}
+
+#startButton:hover{
+    background-color:#81C784;
+
+}
+.buttonContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.headingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 800%;
+    /* border:solid; */
+    /* width: 50%px;
+    height: 90px; */
+    
+}
+ .score {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+    font-size: 75px;
+    height: auto;
+    width: auto;
+
+ }
+
+.theSquares{
+    display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    width: 600px;
+	height: 600px;
+	margin: 0 auto;
+  background-color: #212121;
+  color: #EEEEEE;
+  /* border: 6px solid #2c3e50; */
+  /* border-radius: 10px; */
+}
+
+.square{
+
+    border: 6px solid #81C784; 
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bangers', cursive;
+}
+
+.winnerModal{
+    display: none;
+}
+.winnerModal---Show{
+    position: absolute;
+    top:0;
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0,0,.5);
+}
+#popUpWindow {
+    background-color: #212121;
+    border-radius: 25px;
+    padding-top: 5%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+#trophy{
+    height:30%;
+}
+#winner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid; */
+    font-size: 700%;
+    width: 50%;
+    height: 30%;
+    
+}
+#newGameButton{
+    font-family: 'Bangers', cursive;
+    border-radius: 25px;
+    border: 0;
+    width: 30%;
+    height: 15%;
+    font-size: xx-large;
+}
+#newGameButton:hover{
+    background-color:#81C784;
+
+}
+
+/* $phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1440px; */
+
+@media screen and (max-width: 480px){
+    .startModal{
+        height: 100%;
+        width: 100%;
+    }
+    #title{
+        font-size: 10vh;
+    }
+    #logo{
+        width: 80vw;
+    }
+    #startButton{
+        font-size: 2vh;
+    }
+    .headingContainer{
+        /* margin-bottom: 5%;
+        border: solid; */
+    }
+    #heading{
+        font-size: 3em;
+        border: solid;
+    }
+    .score{
+        font-size: 3em;
+        border: solid;
+    }
+
+
+    .theSquares{
+        border: solid;
+        width: 80vw;
+        height: 50vh;
+    }
+
+    #winner{
+        /* border: solid; */
+        width: 80%;
+        font-size: 5vh;
+    }
+    #newGameButton{
+        width: 50vw;
+
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    #title{
+        font-size: 10%;
+    }
+    #logo{
+        width: 60vw;
+    }
+
+    #heading{
+        font-size: 5em;
+        /* border: solid; */
+    }
+    .score{
+        font-size: 5em;
+        /* border: solid; */
+    }
+    .theSquares{
+        /* border: solid; */
+        width: 60vw;
+        height: 60vh;
+    }
+
+    #winner{
+        /* border: solid; */
+        width: 80%;
+        font-size: 10vh;
+    }
+    #newGameButton{
+        width: 30vw;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1299px){
+
+}
+
